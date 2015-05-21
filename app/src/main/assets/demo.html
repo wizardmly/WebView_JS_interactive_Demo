@@ -1,0 +1,55 @@
+<html>
+<meta charset="utf-8">
+<head>
+    <title>js交互android</title>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function javacalljswithargs(arg) {
+            document.getElementById("content").value = arg;
+            alert("从native端调用WebView的JS方法成功，所传参数：" + arg);
+        }
+    </script>
+</head>
+<body>
+<br/>
+>>>>>Java Native 调用 B页面的JS方法"javacalljswithargs"
+<br/>
+<br/>
+Java传过来的值：
+<input type="text" id="content" placeholder="result"/>
+<br/>
+<br/>
+
+<p/>
+
+<p/>
+
+<p/>
+
+<p/>
+>>>>>B页面调用JavaNative声明的JS方法"postStr"
+<form action="">
+    <p>
+
+    <div id="info">
+        向Android Native传递两个实参，并取得返回值
+    </div>
+    </p>
+    <p>
+        <input type="text" id="text" placeholder="实参一"/>
+    </p>
+
+    <p>
+        <input type="text" id="text1" placeholder="实参二"/>
+    </p>
+
+    <p>
+        <input type="text" id="text2" placeholder="返回值:拼接参数"/>
+    </p>
+
+    <p>
+        <input type="button" id="btn_post" onclick="postStr()" value="获取返回值"/>
+    </p>
+</form>
+</body>
+</html>
