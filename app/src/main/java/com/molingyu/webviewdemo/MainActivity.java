@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web_view_demo);
+        setContentView(R.layout.activity_main);
         initView();
 
     }
